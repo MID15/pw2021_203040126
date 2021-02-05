@@ -3,8 +3,8 @@
     Mochamad Indra Wahyudi
     203040126
     github.com/MID15/pw2021_203040126
-    Pertemuan 2
-    Belajar mengenai sintaks dasar PHP
+    Pertemuan 2 (5 Februari 2021)
+    Materi minggu ini mempelajari mengenai penggunaan sintaks dasar PHP
     */
 ?>
 
