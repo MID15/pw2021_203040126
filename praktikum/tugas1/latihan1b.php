@@ -17,16 +17,19 @@
     <table border="1" cellspacing="0" cellpadding="10">
         <tr>
             <th>
-                <?php for ($i = 1; $i <= 5; $i++) : ?>
-                    <th>Kolom <?= $i; ?></th>
-                    <?php for ($j = 1; $j <= 5; $j++) : ?>
-                        <tr>
-                            <th>Baris <?= $j ; ?></th>
-                            <td>Baris <?= $j ; ?>, Kolom <?= $i; ?></td>
-                        </tr>
-                    <?php endfor; ?>
-                <?php endfor; ?>
+            <?php for( $i = 1; $i <= 5; $i++ ) : ?>
+                <th>Kolom <?= $i; ?></th>
+            <?php endfor; ?>
+        </tr>
+        <?php for( $j = 1; $j <= 5; $j++ ) : ?>
+        <tr>
+            <th>Baris <?= $j; ?></th>
+            <?php for( $i = 1; $i <= 5; $i++ ) : ?>
+                <td><?= "Baris $j, Kolom $i" ?></td>
+            <?php endfor; ?>
             </th>
+        </tr>
+        <?php endfor; ?>
     </table>
 </body>
 </html>
