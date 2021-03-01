@@ -13,34 +13,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
-            border: 5px solid black;
-            width: 120px;
-        }
-        .flex {
-            display: flex;
-        }
-        p {
+    .row {
+            background-color: salmon;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 5px;
             text-align: center;
-            width: 20px;
-            height: 20px;
-            background-color: orange;
             border: 3px solid black;
-            margin: 5px;
-            border-radius: 50%;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-<div class="container">
-        <?php for ($i = 1; $i <= 3; $i++) : ?>
-            <div class="flex">
-            <?php for ($j = 1; $j <= $i; $j++) : ?>
-            <p><?= $i; ?></p>
-            <?php endfor; ?>
-            </div>
-            <br>
+    <?php for( $i = 1; $i <= 3; $i++ ) : ?>
+        <?php for( $j = 1; $j <= $i; $j++ ) : ?>
+            <div class="row"><?= $i ?></div>
         <?php endfor; ?>
-</div>
+        <br>
+    <?php endfor; ?>
 </body>
 </html>
