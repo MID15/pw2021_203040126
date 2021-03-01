@@ -16,19 +16,22 @@
     <style>
         .container {
             border: 3px solid black;
-            padding: 10px;
+            width: 250px;
+            padding: 2px;
         }
         .red {
-            background-color: red;
+            background-color: salmon;
             height: 30px;
             width: 30px;
-            margin: 10px;
+            margin: 4px;
+            display: inline-block;
         }
         .blue {
-            background-color: blue;
+            background-color: lightblue;
             height: 30px;
             width: 30px;
-            margin: 10px;
+            margin: 4px;
+            display: inline-block;
         }
     </style>
 </head>
