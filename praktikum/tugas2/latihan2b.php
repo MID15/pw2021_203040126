@@ -24,14 +24,11 @@
     $jawabanIsset = "Isset adalah = Fungsi untuk memeriksa apakah sebuah variable sudah dibuat atau belum <br><br>";
     $jawabanEmpty = "Empty adalah = Fungsi untuk memeriksa apakah sebuah variable sudah diisikan oleh nilai tertentu";
 
-    function jawaban ($style) {
+    function soal ($style) {
         global $jawabanIsset, $jawabanEmpty;
-        echo $jawabanIsset, $jawabanEmpty;
-        return $style;
+        echo "<div class=$style>$jawabanIsset $jawabanEmpty</div>";
     }
+    echo soal("jawaban");
 ?>
-    <div class="jawaban">
-        <?= jawaban(""); ?>
-    </div>
 </body>
 </html>
