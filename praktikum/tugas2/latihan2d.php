@@ -7,6 +7,7 @@
 ?>
 <?php
 function hitungDeterminan($a, $b, $c, $d){
+    $det = ($a*$d) - ($b*$c);
     // Tampilan matriksnya
     echo "
         <table cellpadding='5' cellspacing='5'>
@@ -23,7 +24,7 @@ function hitungDeterminan($a, $b, $c, $d){
 
     // Hitung determinanya
     echo "<br>";
-    echo "<b>Determinan dari matriks tersebut adalah " . (($a * $d) - ($b * $c)) . "</b>";
+    echo "<b>Determinan dari matriks tersebut adalah $det</b>";
 }
 ?>
 <!DOCTYPE html>
