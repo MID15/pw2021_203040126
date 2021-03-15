@@ -83,14 +83,14 @@ foreach ($nama as $a => $value) {
 </head>
 <body>
     <div class="kotak">
-        <p style = "font-weight: bolder;">Daftar pemain bola terkenal dan clubnya</p>
+        <p><b>Daftar pemain bola terkenal dan clubnya</b></p>
             <table border="1" cellspacing="0" cellpadding="10">
-                <td>NO</td>
-                <td>NAMA</td>
-                <td>CLUB</td>
-                <td>MAIN</td>
-                <td>GOAL</td>
-                <td>ASSIST</td>
+                <td><b>NO</b></td>
+                <td><b>NAMA</b></td>
+                <td><b>CLUB</b></td>
+                <td><b>MAIN</b></td>
+                <td><b>GOAL</b></td>
+                <td><b>ASSIST</b></td>
                 <tr></tr>
                 <?php  $i = 1; ?>    
                 <?php foreach ($nama as $n) : ?>  
