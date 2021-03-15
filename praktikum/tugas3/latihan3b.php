@@ -21,6 +21,9 @@
             width: 50%;
             padding: 10px;
         }
+        p {
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +38,7 @@
                 array_push($nama, 'Luca Modrie', 'Sadio Mane');
                 sort($nama);
             ?>
+            <p>Daftar pemain bola terkenal baru</p>
             <ol>
                 <?php foreach($nama as $n) : ?>                   
                         <li><?= $n; ?></li>                  
