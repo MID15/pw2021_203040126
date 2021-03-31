@@ -65,8 +65,16 @@ $items = [
             height: 150px;
         }
 
-        .genre {
-            background-color: red;
+        table {
+            text-align: center;
+        }
+
+        table .genre {
+            color: white;
+            display: inline;
+            padding: 2px;
+            background-color: cadetblue;
+            border-radius: 10px;
         }
     </style>
 
@@ -97,7 +105,9 @@ $items = [
                         <td><?= $item["penulis"]; ?></td>
                         <td><?= $item["penerbit"]; ?></td>
                         <td><?= $item["tahun"]; ?></td>
-                        <td class="genre"><?= $item["genre"]; ?></td>
+                        <td>
+                            <p class="genre"><?= $item["genre"]; ?></p>
+                        </td>
                         <?php $i++; ?>
                     </tr>
                 <?php endforeach; ?>
