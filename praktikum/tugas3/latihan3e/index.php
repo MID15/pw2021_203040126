@@ -68,14 +68,6 @@ $items = [
         table {
             text-align: center;
         }
-
-        table .genre {
-            color: white;
-            display: inline;
-            padding: 2px;
-            background-color: cadetblue;
-            border-radius: 10px;
-        }
     </style>
 
     <title>Hello, world!</title>
