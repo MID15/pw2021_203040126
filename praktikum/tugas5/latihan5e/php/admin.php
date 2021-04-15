@@ -4,6 +4,11 @@ require 'functions.php';
 
 // Melakukan Query dari database
 $buku = query("SELECT * FROM buku");
+
+// ketika tombol cari diklik
+if (isset($_POST['cari'])) {
+  $buku = cari($_POST['keyword']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +45,12 @@ $buku = query("SELECT * FROM buku");
   <div class="container">
     <div class="add">
       <a href="tambah.php"><button class="btn btn-outline-primary btn-sm">Tambah Data</button></a>
+      <br><br>
+      <form action="" method="POST">
+        <input type="text" name="keyword" size="40" placeholder="masukan keyword pencarian" autocomplete="off" autofocus>
+        <button type="submit" name="cari">Cari</button>
+      </form>
+      <br>
     </div>
     <table class="table table-striped table-bordered align-middle">
       <tr>
@@ -52,7 +63,13 @@ $buku = query("SELECT * FROM buku");
         <th>Tahun Terbit</th>
         <th>Genre</th>
       </tr>
-
+      <?php if (empty($buku)) : ?>
+        <tr>
+          <td colspan="8">
+            <p style="color: red; font-style: italic;">Data buku tidak ditemukan</p>
+          </td>
+        </tr>
+      <?php endif; ?>
       <?php $i = 1; ?>
       <?php foreach ($buku as $b) : ?>
         <tr>
