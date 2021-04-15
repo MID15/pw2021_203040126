@@ -24,50 +24,42 @@ if (isset($_POST["tambah"])) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <title>Tambah</title>
+  <style>
+    form {
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
+  <h3>Form Tambah Data Buku</h3>
   <form action="" method="POST">
-    <ul>
-      <li>
-        <label>
-          Judul
-          <input type="text" name="judul">
-        </label>
-      </li>
-      <li>
-        <label>
-          Penulis
-          <input type="text" name="penulis">
-        </label>
-      </li>
-      <li>
-        <label>
-          Penerbit
-          <input type="text" name="penerbit">
-        </label>
-      </li>
-      <li>
-        <label>
-          Tahun Terbit
-          <input type="text" name="tahun">
-        </label>
-      </li>
-      <li>
-        <label>
-          Genre
-          <input type="text" name="genre">
-        </label>
-      </li>
-      <br>
-      <button type="submit" name="tambah" class="btn btn-primary btn-sm">Tambah Data!</button>
-      <button type="submit" class="btn btn-primary btn-sm">
-        <a href="admin.php" style="color: white; text-decoration: none;">Kembali</a>
-      </button>
-    </ul>
-
-
-
+    <table border="0" cellpadding="10px">
+      <tr>
+        <td> <label> Judul </label></td>
+        <td><input type="text" name="judul" required autofocus></td>
+      </tr>
+      <tr>
+        <td> <label> Penulis </label></td>
+        <td><input type="text" name="penulis" required></td>
+      </tr>
+      <tr>
+        <td> <label> Penerbit </label></td>
+        <td><input type="text" name="penerbit" required></td>
+      </tr>
+      <tr>
+        <td> <label> Tahun Terbit </label></td>
+        <td><input type="text" name="tahun" required></td>
+      </tr>
+      <tr>
+        <td> <label> Genre </label></td>
+        <td><input type="text" name="genre" required></td>
+      </tr>
+    </table>
+    <button type="submit" name="tambah" class="btn btn-primary btn-sm">Tambah Data!</button>
+    <button type="submit" class="btn btn-primary btn-sm">
+      <a href="admin.php" style="color: white; text-decoration: none;">Kembali</a>
+    </button>
   </form>
 
   <!-- Optional JavaScript; choose one of the two! -->
