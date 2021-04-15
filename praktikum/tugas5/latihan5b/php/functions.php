@@ -26,7 +26,7 @@ function tambah($data)
     $judul = htmlspecialchars($data['judul']);
     $penulis = htmlspecialchars($data['penulis']);
     $penerbit = htmlspecialchars($data['penerbit']);
-    $tahun = htmlspecialchars($data['tahun terbit']);
+    $tahun = htmlspecialchars($data['tahun']);
     $genre = htmlspecialchars($data['genre']);
 
 

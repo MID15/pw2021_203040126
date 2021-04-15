@@ -23,7 +23,7 @@ if (isset($_POST["tambah"])) {
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-  <title>Tambah</title>
+  <title>Form Tambah Buku</title>
 </head>
 
 <body>
@@ -32,31 +32,31 @@ if (isset($_POST["tambah"])) {
       <li>
         <label>
           Judul
-          <input type="text" name="judul">
+          <input type="text" name="judul" required autofocus>
         </label>
       </li>
       <li>
         <label>
           Penulis
-          <input type="text" name="penulis">
+          <input type="text" name="penulis" required>
         </label>
       </li>
       <li>
         <label>
           Penerbit
-          <input type="text" name="penerbit">
+          <input type="text" name="penerbit" required>
         </label>
       </li>
       <li>
         <label>
           Tahun Terbit
-          <input type="text" name="tahun terbit">
+          <input type="text" name="tahun" required>
         </label>
       </li>
       <li>
         <label>
           Genre
-          <input type="text" name="genre">
+          <input type="text" name="genre" required>
         </label>
       </li>
       <br>

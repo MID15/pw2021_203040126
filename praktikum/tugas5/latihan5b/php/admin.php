@@ -65,7 +65,7 @@ $buku = query("SELECT * FROM buku");
           <td><?= $b['judul']; ?></td>
           <td><?= $b['penulis']; ?></td>
           <td><?= $b['penerbit']; ?></td>
-          <td><?= $b['tahun terbit']; ?></td>
+          <td><?= $b['tahun']; ?></td>
           <td><?= $b['genre']; ?></td>
         </tr>
         <?php $i++ ?>

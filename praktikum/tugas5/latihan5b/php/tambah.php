@@ -50,7 +50,7 @@ if (isset($_POST["tambah"])) {
       <li>
         <label>
           Tahun Terbit
-          <input type="text" name="tahun terbit">
+          <input type="text" name="tahun">
         </label>
       </li>
       <li>

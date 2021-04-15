@@ -30,7 +30,7 @@ function tambah($data)
     $judul = htmlspecialchars($data['judul']);
     $penulis = htmlspecialchars($data['penulis']);
     $penerbit = htmlspecialchars($data['penerbit']);
-    $tahun = htmlspecialchars($data['tahun terbit']);
+    $tahun = htmlspecialchars($data['tahun']);
     $genre = htmlspecialchars($data['genre']);
 
 
@@ -41,5 +41,12 @@ function tambah($data)
           ";
 
     mysqli_query($conn, $query);
+    return mysqli_affected_rows($conn);
+}
+
+function hapus($id)
+{
+    $conn = koneksi();
+    mysqli_query($conn, "DELETE FROM buku WHERE id = $id") or die(mysqli_error($conn));
     return mysqli_affected_rows($conn);
 }

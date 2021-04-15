@@ -41,7 +41,7 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
             <p><?= $buku["judul"] ?></p>
             <p><?= $buku["penulis"] ?></p>
             <p><?= $buku["penerbit"] ?></p>
-            <p><?= $buku["tahun terbit"] ?></p>
+            <p><?= $buku["tahun"] ?></p>
             <p><?= $buku["genre"] ?></p>
         </div>
         <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
