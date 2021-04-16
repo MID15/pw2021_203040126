@@ -13,7 +13,7 @@ require "functions.php";
 $id = $_GET['id'];
 
 // Melakukan query dengan parameter id yang diambil dari url
-$buku = query("SELECT * FROM buku WHERE id = $id")[0];
+$buku = query("SELECT * FROM buku WHERE id = $id");
 ?>
 <!DOCTYPE html>
 <html lang="en">
