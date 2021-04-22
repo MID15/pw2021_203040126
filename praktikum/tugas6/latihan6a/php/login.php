@@ -56,6 +56,13 @@ if (isset($_POST['login'])) {
         <td> <input type="password" name="password" required></td>
       </tr>
       <tr>
+        <div class="remember">
+          <td><input type="checkbox" name="remember">
+            <label for="remember">Remember Me</label>
+          </td>
+        </div>
+      </tr>
+      <tr>
         <td>
           <button type="submit" name="login" class="btn btn-outline-primary btn-sm">Login</button>
         </td>
